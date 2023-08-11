@@ -5,10 +5,7 @@
     --tod-face-size: calc(var(--greeting-size) * 5); /* 5 times greeting size */
     --role-size: calc(var(--greeting-size) * 3); /* 3 times greeting size */
     --Text: #0C1618;
-    --Highlight: #004643;
     --Tint: #4CAF50;
-    --Error: #ED865A;
-    --Warning: #FEEA00;
     --Background: #F5F5F5;
 }
 
@@ -20,6 +17,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: var(--Background);
+    color: var(--Text); /* Default text color */
     font-weight: bold;
 }
 
@@ -46,14 +44,42 @@ body {
     text-align: right;
 }
 
+.left-align {
+    text-align: left;
+}
+
 .greeting {
     font-size: var(--greeting-size);
+    text-align: right;
 }
 
 .tod-face {
     font-size: var(--tod-face-size);
+    text-align: center;
 }
 
-.role {
+.role1 {
     font-size: var(--role-size);
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.role2 {
+    font-size: var(--role-size);
+    text-align: left;
+    vertical-align: top;
+}
+
+.tint {
+    color: var(--Tint);
+}
+
+.spacing {
+    width: 5%;
+}
+
+.highlight-tod,
+.highlight-char,
+.highlight {
+    color: var(--Tint);
 }
